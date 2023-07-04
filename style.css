@@ -48,9 +48,49 @@ body {
     width: 100%; 
 }
 
+.navbar-toggler:focus, 
+.navbar-toggler:active, 
+.navbar-toggler-icon:focus {
+outline: none;
+box-shadow: none;
+}
 
 .navbar-title {
     color: var(--secondColor);
     font-size: 2rem;
     font-weight: 600;
+}
+
+section {
+    padding: 5rem 0;
+    ;
+}
+/* HERO SECTION */
+
+#hero {
+    /* background-image: url(https://cdn.pixabay.com/photo/2022/10/26/18/19/architecture-7549184_1280.jpg); */
+background-repeat: no-repeat;
+background-position: center right;
+background-size: cover;
+}
+
+#hero .social a{
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -os-transition: all .4s;
+}
+
+#hero .social a:hover{
+color: var(--textColor);
+transform: scale (1.2);
+-webkit-transform: scale(1.2);
+-moz-transform: scale(1.2);
+-ms-transform: scale(1.2);
+-os-ttransform: scale(1.2);
+}
+
+#hero h1 .typer{
+    color: var(--secondColor);
 }
