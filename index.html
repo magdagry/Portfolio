@@ -293,15 +293,106 @@
     <section id="portfolio">
         <div class="container">
             <div class="section-title">
-                <h3 class="text-center fw-bold main-title">My services</h3>
-                <p class="text-center fw-bold ms-4 ps-3 sub-title">What am I doing?</p>
+                <h3 class="text-center fw-bold main-title">My Portfolio</h3>
+                <p class="text-center fw-bold ms-4 ps-5 sub-title">What did I do?</p>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-3">
+                <div class="col">
+                    <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="gallery-item image-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="gallery-item image-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="gallery-item image-fluid">
+                </div>
+                <div class="col">
+                    <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="gallery-item image-fluid">
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- MODAL -->
+
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://images.pexels.com/photos/574073/pexels-photo-574073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                        alt="" class="modal-img img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL  END   -->
+
     <!-- PORTFOLIO  END   -->
 
 
+    <!-- CONTACT  START   -->
+
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h3 class="text-center fw-bold main-title">CONTACT</h3>
+                <p class="text-center fw-bold ms-2 ps-5 sub-title">Contact Me</p>
+            </div>
+            <div class="row gx-5">
+                <div class="col-lg-6 text-center">
+                    <div class="contact-bg d-flex flex-column justify-content-center rounded-2">
+                        <h5 class="py-3">You can contact me from the dialog box </h5>
+                        <div class="contact-info d-flex flex-column gap-2 text-center">
+                            <a href="tel: 694690357" class="text-white">
+                                <i class="bi bi-telephone-fill me-3"></i>0123456789
+                                <a href="mailto: email@website.com" class="text-white">
+                                    <i class="bi bi-envelope-fill me-3"></i>mail@com
+                                    <a href="#" class="text-white">
+                                        <i class="bi bi-geo-alt-fill me-3"></i>Poland
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <form>
+                        <div class="mb-3">
+
+                            <input type="text" class="form-control" id="Name" placeholder="Your Name and Surname">
+                            <div id="emailHelp" class="form-text"></div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="Email" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Subject" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" placeholder="Enter Your Message" id="floatingTextarea"
+                                rows="8"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- CONTACT  END   -->
+
+    <!-- FOOTER  START   -->
+
+    <!-- FOOTER  END   -->
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
