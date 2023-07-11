@@ -178,3 +178,9 @@ form input, textarea{
 .form-control::placeholder {
     color: rgba(227, 217, 217, 0.688);
 }
+
+@media screen and (max-width:974px){
+    .contact-bg{
+        height: 40vh;
+    }
+}
