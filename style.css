@@ -138,13 +138,15 @@ transform: scale (1.2);
 
 .skill img {
     background-color: rgba(255, 255, 255, 0.679);
+    width: 10rem;
+    height: 10rem;
 }
 
 
 /* SERVICS SECTION */
 
 .service-box {
-    transition: all .40s;
+    transition: all 2s ease;
 }
 
 .service-box:hover{
@@ -190,16 +192,11 @@ form input, textarea{
     }
 }
 
-.btn {
-    background-color: #8d13c1!important;
-    border-color: #550876!important;
-    color: var(--textColor)!important;
-}
-
-.btn:hover {
-    border-color: #550876!important;
-}
 
 .bi {
     color: #8d13c1;
+}
+
+.wd-icon {
+    filter: brightness(0) invert(1) hue-rotate(180deg);
 }
