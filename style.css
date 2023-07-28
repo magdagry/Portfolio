@@ -44,7 +44,7 @@ body {
     -os-transition: ease .40;
 }
 
-#mainNavbar .nav-item:not(:last-child) .nav-link:hover::after {
+#mainNavbar .nav-link:hover::after {
     width: 100%; 
 }
 
@@ -129,6 +129,7 @@ transform: scale (1.2);
     border-radius: 7px;
     cursor: pointer;
     transition: all;
+    transition: 1s ease-in-out;
 }
 
 .skill:hover{
@@ -146,14 +147,40 @@ transform: scale (1.2);
 /* SERVICS SECTION */
 
 .service-box {
-    transition: all 2s ease;
+    position: relative;
+    border-radius: 7px;
+    overflow:hidden;
 }
 
-.service-box:hover{
+.service-box h3, p {
+    position: relative;
+    z-index: 1;
+}
+
+.gradient::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-45deg, #efbdff 0%, #c94fff 100%);
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.service-box:hover .gradient::before {
+   opacity: 1;
+}
+
+
+/* .service-box:hover{
     background-image: linear-gradient(-45deg, #efbdff 0%, #c94fff 100%) ;
 border-radius: 7px;
-padding: 20px 0;
-}
+background-color: #ba55d3;
+transition: all 3s ease;
+/* padding: 20px 0; */
+
 
 /* SPORTFOLIO SECTION */
 
@@ -193,10 +220,70 @@ form input, textarea{
 }
 
 
+
+
+.btn-primary {
+    background-color: #c94fff;
+    border-color: #8d13c1;
+    border-radius: 0,25rem!important;
+}
+
+.btn:active {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #3c0b48;
+}
+
+.btn-primary:active
+{
+    color: #fff;
+    background-color:  #c94fff;;
+    border-color: #8d13c1;
+    box-shadow: 0 0 0 0.25rem #3c0b48!important;
+}
+
+.btn-primary:hover {
+    background-color:  #8d13c1;
+    border: 2px solid var(--primaryColor)
+}
+
+
+.btn-primary:focus {
+    background-color:  #8d13c1;
+    border: 2px solid var(--primaryColor);
+    box-shadow: 0 0 0 0.25rem #3c0b48;
+}
+
+.btn-outline-primary {
+    color: #ba55d3;
+    border-color: #ba55d3;
+}
+
+.btn-outline-primary:active {
+    color: rgb(255, 255, 255);
+    background-color: #ba55d3;
+    border-color: #ba55d3;
+    box-shadow: 0 0 0 0.25rem #3c0b48!important;
+}
+
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.25rem #3c0b48;;
+}
+
+.btn-outline-primary:hover {
+    color: #fff;
+    background-color:  #c94fff;
+    border-color:  #c94fff;
+}
+
 .bi {
     color: #8d13c1;
 }
 
 .wd-icon {
     filter: brightness(0) invert(1) hue-rotate(180deg);
+}
+
+.progress-bar {
+    background-image: linear-gradient(-45deg, #efbdff 0%, #c94fff 100%) ;
+    ;
 }
